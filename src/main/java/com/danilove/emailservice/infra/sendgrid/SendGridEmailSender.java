@@ -3,14 +3,12 @@ package com.danilove.emailservice.infra.sendgrid;
 import com.danilove.emailservice.adapters.EmailSenderGateway;
 import com.danilove.emailservice.core.exceptions.EmailServiceException;
 import com.sendgrid.*;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.logging.Logger;
 
 @Service
 public class SendGridEmailSender implements EmailSenderGateway {
-    private static final org.slf4j.Logger log = LoggerFactory.getLogger(SendGridEmailSender.class);
     private final Logger logger = Logger.getLogger(SendGridEmailSender.class.getName());
 
     private final SendGrid sg = new SendGrid("SENDGRID_API_KEY");
