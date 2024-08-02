@@ -56,6 +56,11 @@
 			<artifactId>sendgrid-java</artifactId>
 			<version>4.0.1</version>
 		</dependency>
+		<dependency>
+			<groupId>com.sparkpost</groupId>
+			<artifactId>sparkpost-lib</artifactId>
+			<version>0.27</version>
+		</dependency>
 	</dependencies>
 
 	<build>
